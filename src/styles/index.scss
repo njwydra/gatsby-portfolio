@@ -1,0 +1,75 @@
+@import "_colors";
+
+.neumorph {
+  // border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 2em;
+  box-shadow: -5px -5px 10px $bd-lt-lt, 5px 5px 10px $bd-lt-dk;
+  &:not(.namecard):active {
+    box-shadow: inset -5px -5px 10px $bd-lt-lt, inset 5px 5px 10px $bd-lt-dk;
+  }
+}
+
+.namecard {
+  background-color: $bg-lt;
+  width: 40vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .name,
+  .role,
+  .location {
+    font-weight: 300;
+    margin: 0;
+  }
+  .name {
+    margin-bottom: 0.5em;
+  }
+  .role,
+  .location {
+    font-size: 1.25em;
+  }
+}
+
+.button-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+  .button {
+    width: 3em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:not(:last-child) {
+      margin-right: 1em;
+    }
+    img {
+      width: 2em;
+      // height: 2em;
+    }
+  }
+}
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body,
+.home-cont {
+  height: 100vh;
+  width: 100vw;
+  background-color: $bg-lt;
+  h1 {
+    font-family: "Merriweather", serif;
+    font-weight: regular;
+  }
+}
+
+.home-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

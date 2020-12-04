@@ -5,7 +5,6 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-offline",
-    "gatsby-plugin-manifest",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
