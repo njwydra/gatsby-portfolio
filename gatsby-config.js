@@ -16,4 +16,7 @@ module.exports = {
       __key: "images",
     },
   ],
+  siteMetadata: {
+    siteUrl: "https://nickwydra.com"
+  }
 };
